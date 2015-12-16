@@ -1,1 +1,243 @@
-My Page
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>Supplementary Material for De-Layering Social Networks by Shared Tastes of Friendships &larr; </title>
+   <meta name="author" content="Laura Dietz" />
+
+
+	
+	
+	
+
+   <!-- syntax highlighting CSS -->
+   <link rel="stylesheet" href="/~dietz/files/css/syntax.css" type="text/css" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/~dietz/files/css/screen.css" type="text/css" />
+
+</head>
+<body id="Work">
+<div id="site">
+
+  <h1 id='delayering_social_networks_by_shared_tastes_of_friendships'>De-Layering Social Networks by Shared Tastes of Friendships</h1>
+
+<p>Laura Dietz, Ben Gamari, John Guiver, Edward Snelson, Ralf Herbrich</p>
+
+<p>Proceedings of International Conference on Weblogs and Social Media, 2012</p>
+
+<p><a href='dietz-cameraready.pdf'>View Paper</a> <a href='ICWSMposter-v1.0.pdf'>View Poster</a> <a href='http://prezi.com/nobl73twcmki/de-layering-social-networks-with-shared-tastes-of-friendships/'>View Presentation</a></p>
+
+<h2 id='abstract'>Abstract</h2>
+
+<p>Traditionally, social network analyses are applied to data from a particular social domain. With the advent of online social networks such as Facebook, we observe an aggregate of various social domains resulting in a layered mix of professional contacts, family ties, and different circles. The aggregates dilute the community structure. We provide a method for de-layering social networks according to shared interests. Instead of relying on changes in the edge density, out shared taste model uses content of users to disambiguate the underlying shared interest of each friendship.</p>
+
+<h2 id='cite_as'>Cite As</h2>
+
+<pre><code>@inproceedings{Dietz-ICWSM2012,
+author = {Dietz, Laura and Gamari, Ben and Guiver, John and Snelson, Edward and Herbrich, Ralf},
+booktitle = {Proceedings of the Sixth International AAAI Conference on Weblogs and Social Media (ICWSM 2012)},
+title = {De-Layering Social Networks by Shared Tastes of Friendships},
+year = {2012}
+}</code></pre>
+
+<h2 id='haskell_implementation'>Haskell Implementation</h2>
+
+<p>Clone from github: git://github.com/laura-dietz/bayes-stack.git</p>
+
+<p>The model implementation is in BayesStack/Models/Topic/SharedTaste.hs</p>
+
+<p>For an example on how to use is, see SharedTasteTest.hs</p>
+
+<ul>
+<li>
+<p>FIRST! Install Cabal with the Haskell Platform from <a href='http://hackage.haskell.org/platform/'>http://hackage.haskell.org/platform/</a></p>
+</li>
+
+<li>
+<p>Call &#8220;cabal install&#8221; from inside the directory</p>
+</li>
+</ul>
+
+<h2 id='librarything_experiments'>LibraryThing Experiments</h2>
+
+<p>AUC for all user groups and various interpolated models <a href='groups-nodes.full.pdf'>.pdf</a></p>
+
+<h2 id='boardsie_experiments'>Boards.ie Experiments</h2>
+
+<p>Topic 1 &#8220;Student&#8221;</p>
+
+<p>summer, whats, help, doing, results, ucd, college, arts, union, question, whos, beer, christmas, week, ball, exam, students, free, beers, student, amp, post, day, forum, boards, thread, science, official, dublin, exams</p>
+
+<p>Overlaid layers:</p>
+
+<ul>
+<li>Topic 6 (red)</li>
+
+<li>Topic 7 (light blue)</li>
+
+<li>Topic 9 (dark blue)</li>
+</ul>
+
+<p><a href='topic001.pdf'>topic001.pdf</a> <a href='topic001.gephi'>topic001.gephi</a> <a href='topic001.dot'>topic001.dot</a></p>
+
+<p>Topic 2 &#8220;Games and Movies&#8221;</p>
+
+<p>irish, whats, help, please, boardsie, thread, film, movie, question, live, board, ireland, online, lan, star, favourite, spoilers, simpsons, game, world, post, mod, episode, boards, forum, lost, season, server, games, time</p>
+
+<p>Overlaid layers:</p>
+
+<ul>
+<li>Topic 6 (red)</li>
+
+<li>Topic 8 (light blue)</li>
+
+<li>Topic 9 (dark blue)</li>
+</ul>
+
+<p><a href='topic002.pdf'>topic002.pdf</a> <a href='topic002.gephi'>topic002.gephi</a> <a href='topic002.dot'>topic002.dot</a></p>
+
+<p>Topic 3 &#8220;Housing, Cars, Bikes&#8221;</p>
+
+<p>shop, irish, help, house, limerick, article, insurance, city, driving, question, looking, bike, ireland, online, test, buy, bus, advice, time, free, please, amp, buying, thread, getting, car, dublin, sale, night, road</p>
+
+<p>Overlaid layers:</p>
+
+<ul>
+<li>Topic 6 (red)</li>
+
+<li>Topic 9 (light blue)</li>
+
+<li>Topic 10 (dark blue)</li>
+</ul>
+
+<p><a href='topic003.pdf'>topic003.pdf</a> <a href='topic003.gephi'>topic003.gephi</a> <a href='topic003.dot'>topic003.dot</a></p>
+
+<p>Topic 4 &#8220;Rock Music&#8221;</p>
+
+<p>set, whats, help, punk, dead, album, looking, currently, question, gig, music, recommend, song, favourite, bands, night, guitar, band, game, listening, amp, post, metallica, tune, name, metal, dublin, rock, playing, songs</p>
+
+<p>Overlaid layers:</p>
+
+<ul>
+<li>Topic 5 (red)</li>
+
+<li>Topic 7 (light blue)</li>
+
+<li>Topic 9 (dark blue)</li>
+</ul>
+
+<p><a href='topic004.pdf'>topic004.pdf</a> <a href='topic004.gephi'>topic004.gephi</a> <a href='topic004.dot'>topic004.dot</a></p>
+
+<p>Topic 5 &#8220;XBox, Phones, Computer&#8221;</p>
+
+<p>elp, ipod, dublin, pro, hard, cheap, drive, player, computer, amp, quot, question, system, laptop, buy, dvds, advice, nokia, free, wireless, phone, sony, psp, card, dvd, request, sale, xbox, games, car</p>
+
+<p>Overlaid layers:</p>
+
+<ul>
+<li>Topic 2 (red)</li>
+
+<li>Topic 3 (light blue)</li>
+
+<li>Topic 6 (dark blue)</li>
+</ul>
+
+<p><a href='topic005.pdf'>topic005.pdf</a> <a href='topic005.gephi'>topic005.gephi</a> <a href='topic005.dot'>topic005.dot</a></p>
+
+<p>Topic 6 &#8220;Social Discussions&#8221;</p>
+
+<p>opinions, irish, whats, people, site, community, cant, article, vote, web, death, god, discussion, ireland, issue, public, nice, website, gay, banned, wrong, world, change, abortion, boardsie, war, reputation, suggestion, time, ban</p>
+
+<p>Overlaid layers:</p>
+
+<ul>
+<li>Topic 3 (red)</li>
+
+<li>Topic 9 (light blue)</li>
+
+<li>Topic 10 (dark blue)</li>
+</ul>
+
+<p><a href='topic006.pdf'>topic006.pdf</a> <a href='topic006.gephi'>topic006.gephi</a> <a href='topic006.dot'>topic006.dot</a></p>
+
+<p>Topic 7 &#8220;School / CTYI&#8221;</p>
+
+<p>irish, love, people, paper, books, reunion, whats, hate, ctyi, god, question, day, read, book, board, song, favourite, game, maths, amp, junior, session, school, forum, spam, cert, tag, english, religion, history</p>
+
+<p>Overlaid layers:</p>
+
+<ul>
+<li>Topic 1 (red)</li>
+
+<li>Topic 8 (light blue)</li>
+
+<li>Topic 9 (dark blue)</li>
+</ul>
+
+<p><a href='topic007.pdf'>topic007.pdf</a> <a href='topic007.gephi'>topic007.gephi</a> <a href='topic007.dot'>topic007.dot</a></p>
+
+<p>Topic 8 &#8220;Soccer&#8221;</p>
+
+<p>irish, poker, tonight, cup, please, predictions, thursday, sunday, ireland, online, team, final, match, play, liverpool, football, free, game, world, day, boards, tickets, league, soccer, thread, forum, request, boardsie, games, night</p>
+
+<p>Overlaid layers:</p>
+
+<ul>
+<li>Topic 2 (red)</li>
+
+<li>Topic 7 (light blue)</li>
+
+<li>Topic 10 (dark blue)</li>
+</ul>
+
+<p><a href='topic008.pdf'>topic008.pdf</a> <a href='topic008.gephi'>topic008.gephi</a> <a href='topic008.dot'>topic008.dot</a></p>
+
+<p>Topic 9 &#8220;Night Life&#8221;</p>
+
+<p>whats, help, people, posts, thread, girl, poll, sat, horse, please, favourite, beer, messrs, party, christmas, week, club, word, welcome, game, beers, amp, post, day, bar, boards, forum, maguire, dublin, time</p>
+
+<p>Overlaid layers:</p>
+
+<ul>
+<li>Topic 3 (red)</li>
+
+<li>Topic 6 (light blue)</li>
+
+<li>Topic 7 (dark blue)</li>
+</ul>
+
+<p><a href='topic009.pdf'>topic009.pdf</a> <a href='topic009.gephi'>topic009.gephi</a> <a href='topic009.dot'>topic009.dot</a></p>
+
+<p>Topic 10: &#8220;Internet&#8221;</p>
+
+<p>rte, irish, bbc, linux, soon, radio, eircom, news, speed, adsl, ads, broadband, sky, dsl, ireland, digital, channel, available, friday, internet, watch, cork, ntl, coming, amp, card, cable, dublin, connection, netsource</p>
+
+<p>Overlaid layers:</p>
+
+<ul>
+<li>Topic 3 (red)</li>
+
+<li>Topic 6 (light blue)</li>
+
+<li>Topic 8 (dark blue)</li>
+</ul>
+
+<p><a href='topic010.pdf'>topic010.pdf</a> <a href='topic010.gephi'>topic010.gephi</a> <a href='topic010.dot'>topic010.dot</a></p>
+
+<p>Layout with open-ord to show communities <a href='topic010-openord.pdf'>topic010-openord.pdf</a> <a href='topic010-openord.gephi'>topic010-openord.gephi</a></p>
+  
+  <div id="footer">
+	<address>
+		<span class="engine">
+			Powered by 
+			<a href="https://github.com/mojombo/jekyll" title="Jekyll">Jekyll</a>
+		</span>
+	</address>
+  </div>
+</div>
+
+</body>
+</html>
